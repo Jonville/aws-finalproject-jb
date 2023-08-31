@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/* #pageContainer.campaign section.topSection -- START --- */
+#pageContainer.campaign section.topSection {display:flex; flex-flow:row-reverse; position: relative;margin-bottom:3em;}
+#pageContainer.campaign section .applyArea.btn{height: 100%; position: absolute; bottom: calc(100% + 45px); right: 0; width: 13%;}
+#pageContainer.campaign section .applyArea.btn button.applyBtn{background: var(--TxtColorFixed); border: 2px solid #d94d4d99;border-radius: 2em; color: #d94d4d;font-size: 0.9em; font-weight: 700; line-height: 1;display: flex; flex-flow: row;align-items: center; padding: 1em 1em; width: 100%; text-align: center; justify-content: center;}
+#pageContainer.campaign section .applyArea.btn svg{width: 2em;}
+#pageContainer.campaign section .applyArea.btn a{width: 100%;}
+#pageContainer.campaign section .applyArea.btn .acceptBtn{border: 1px solid var(--PointColor); color: var(--PointColor); padding: 0.5em; font-weight: 700; font-size: 1.1em; line-height: 1; border-radius: 2em; padding: 1em 1em; width: 100%;}
+#pageContainer.campaign section .selectArea{position: absolute; left: 0;}
+#pageContainer.campaign section .sortArea {display:flex; flex-flow:row nowrap; align-items:center; justify-content:center;} 
+#pageContainer.campaign section .sortArea button.sortBtn {margin-left:1em;} 
+#pageContainer.campaign section .sortArea button.sortBtn:active{text-decoration: underline; text-underline-position: under;}#pageContainer.campaign section .sortArea button.sortBtn:focus{text-decoration: underline; text-underline-position: under;}
+/* #pageContainer.campaign section.topSection -- END --- */
+
+
+/* #pageContainer.campaign section.listSection -- START --- */
+#pageContainer.campaign section .listArea {display:flex; flex-flow:row wrap; justify-content:flex-start; align-items:stretch;}
+#pageContainer.campaign section a {width:calc((100% - 6em) / 4); margin-right:2em; margin-bottom:4em;}
+#pageContainer.campaign section a:nth-child(4n) {margin-right:0;}
+#pageContainer.campaign section a .imgBox {width:100%; background:#ccc7; position:relative; margin-bottom:1em; padding-top:100%; overflow:hidden;}
+#pageContainer.campaign section a .imgBox img {height:100%; border:1px solid var(--Bgcolor); display:block; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); padding:10%; z-index:2;}
+#pageContainer.campaign section a .imgBox .imgBg {width:110%; height:110%; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:1; opacity:0.75; filter: blur(10px);}
+#pageContainer.campaign section a .txtBox {text-align:justify;}
+#pageContainer.campaign section a .txtBox span.condition {font-size:0.875em; font-weight:700; background:var(--TxtColorFixed); border:1px solid var(--BgColorReversed); line-height:1; padding:0.125em 0.5em;}
+#pageContainer.campaign section a .txtBox.gradeS span.condition {border-color:seagreen; color:seagreen;}
+#pageContainer.campaign section a .txtBox.gradeA span.condition {border-color:dodgerblue; color:dodgerblue;}
+#pageContainer.campaign section a .txtBox.gradeB span.condition {border-color:darkorange; color:darkorange;}
+#pageContainer.campaign section a .txtBox.gradeC span.condition {border-color:gray; color:gray;}
+#pageContainer.campaign section a .txtBox h4.title {width:100%; font-size:1.25em; margin:0.75em 0 0.5em; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+#pageContainer.campaign section a .txtBox p.info {color:var(--InputBgColor); font-weight:500; letter-spacing:-0.25px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis;}
+#pageContainer.campaign section a .txtBox div.price {line-height:1.5; display:flex; flex-flow:row wrap; align-items:flex-end; margin-top:0.5em;}
+#pageContainer.campaign section a .txtBox div.price .before {font-size:0.875em; text-decoration:line-through;}
+#pageContainer.campaign section a .txtBox div.price .sale {color:red; font-weight:700; padding-left:0.5em;}
+#pageContainer.campaign section a .txtBox div.price .after {width:100%; font-size:1.125em; font-weight:700;}
+#pageContainer.campaign section a .txtBox div.price .saleY{display: flex; flex-direction: row; align-items: center;}
+#pageContainer.campaign section a .txtBox div.price .after button{border: 1px solid; border-color:gray; color:gray; padding: 0.2em;  margin-left: 1em;}
+
+#pageContainer.campaign section .pagination {text-align:center; margin-top:1.5em;}
+#pageContainer.campaign section .pagination ul.pageBox {display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;}
+#pageContainer.campaign section .pagination ul.pageBox li {display:block; line-height:1; padding:0.25em; margin:0 0.5em;}
+#pageContainer.campaign section .pagination ul.pageBox li.pageNum.active {font-weight:700;}
+#pageContainer.campaign section .pagination ul.pageBox li.pageChg svg {color:var(--InputTxtColor); display:block;}
+/* #pageContainer.campaign section.listSection -- END --- */
+
+/* #pageContainer.campaign.view -- START --- */
+#pageContainer.campaign.view #pageVisual{width: 100%; max-width: 100% !important; height: auto;  border-bottom: 1px solid var(--GuideColor); padding: 0 !important;}
+#pageContainer.campaign.view #pageVisual .title{margin-bottom: 1rem; font-size: 2.2rem; font-weight: 500; word-break: keep-all; padding: 0;}
+#pageContainer.campaign.view section.top{width: 100%; max-width: 1240px; margin: 0 auto; padding: 60px 0; position: relative; border-bottom: 1px solid var(--BorderColor);}
+#pageContainer.campaign.view section.top a{position: absolute; left: -15px; font-size: 1.5rem;}
+#pageContainer.campaign.view section.top .buyBtn{position: absolute;  right: 20px; display: flex;gap: 20px; padding: 0.5em; width: 12%; height: 13vh;}
+#pageContainer.campaign.view section.top .buyBtn a{position: absolute;  right: 20px; font-size: 1.5rem;display: flex;gap: 20px; background-color: var(--BgColorFixed); color: var(--TxtColorFixed);padding: 0.5em; width: 100%; height: 100%; align-items: center; justify-content: center}
+#pageContainer.campaign.view section.top .buyBtn.sale{font-size: 1.5em; border: 1px solid var(--BorderColor); color: gray; align-items: center; justify-content: center;}
+#pageContainer.campaign.view section.top .imgBox{max-width: 1120px; margin: 0 auto; display: flex; gap: 4rem;}
+#pageContainer.campaign.view section.top .imgBox img{width: 23%; min-width: 100px; border: 1px solid #ddd}
+#pageContainer.campaign.view section.top .imgBox .imgContent{width: 77%; margin-bottom: 33px;display: flex; flex-direction: column;justify-content: flex-end;}
+#pageContainer.campaign.view section.top .imgBox .imgContent .author{font-size: 1.5em;}
+#pageContainer.campaign.view section.top .imgBox .imgContent .caption{color:#888e; font-size: 0.875em; display: flex; align-items: center; justify-content: flex-start;  line-height: 1; margin-top: 0.5em; padding: 0;}
+
+#pageContainer.campaign.view #pageContents{max-width: 1120px; margin: 0 auto; padding: 3rem 0;display: flex; flex-direction: column;}
+#pageContainer.campaign.view section.detailSection b{font-size: 1.7rem; font-weight: 700;}
+#pageContainer.campaign.view section.detailSection .detail{width: 100%; display: flex;margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--BorderColor);}
+#pageContainer.campaign.view section.detailSection .head{width: 20%;}
+#pageContainer.campaign.view section.detailSection .detail .content{display: flex; gap: 2rem;line-height: 2; width: calc(100% - 20%);}
+#pageContainer.campaign.view section.detailSection .detail .content ul:first-child{font-weight: 700;}
+#pageContainer.campaign.view section.detailSection .detail .content li.status{font-size: 0.875em;font-weight: 700; background: var(--TxtColorFixed);border: 1px solid; line-height: 1; padding: 0.7em 1.5em; width: 100%; text-align: center; }
+#pageContainer.campaign.view section.detailSection .detail .content .gradeS{border-color:seagreen; color:seagreen;}
+#pageContainer.campaign.view section.detailSection .detail .content .gradeG{border-color:dodgerblue; color:dodgerblue;}
+#pageContainer.campaign.view section.detailSection .detail .content .gradeN{border-color:darkorange; color:darkorange;}
+#pageContainer.campaign.view section.detailSection .detail .content .gradeB{border-color:gray; color:gray;}
+#pageContainer.campaign.view section.detailSection .detail pre.content{padding: 0; border: 0; word-break: keep-all; text-align: justify; line-height: 1.8;}
+#pageContainer.campaign.view section.detailSection .detail.author .content{align-items: baseline; display: flex; flex-direction: column;}
+#pageContainer.campaign.view section.detailSection .detail.author .content small{margin-left: 1em;}
+#pageContainer.campaign.view section.detailSection .detail.author .des_book_authorDt{margin-bottom: 2em; border: 0;}
+/* #pageContainer.campaign.view -- END --- */
+
+/* #pageContainer.campaign.apply -- START --- */
+#pageContainer.campaign.apply .applySection .formArea{max-width: 900px; background: #fff1; margin: 0 auto; padding: 2em 0;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox{border-bottom: 1px dashed var(--InputTxtColor); display: flex; flex-flow: column; margin-bottom: 2em;padding: 0 3em 2em;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox > div label{width: 100%; font-size: 1.25; font-weight: 700; padding-right: 0.5em; word-break: keep-all;padding: 0.5em 0;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox .infoTitle{font-size: 1.75em; font-weight: 700; line-height: 1; margin-bottom: 0.75em;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox > div{width: 100%; display: flex; padding-bottom: 0.75em;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.user > div{  flex-flow: row nowrap; align-items: center;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.user label{width: 80px;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.user div.likeInput{width: calc(100% - 80px); background: #eee5;  font-weight: 500; color: var(--TxtColor);}
+#pageContainer.campaign.apply .applySection .formArea div.likeInput{width: 100%; height: 37.5px;  margin-right: 0.5em;  padding: 5px; border: 1px solid var(--BorderColor);  background-color: #fff3; padding-left: 0.7em;}
+#pageContainer.campaign.apply .formArea .infoBox .caption{color:#888e; font-size: 0.875em; align-items: center; justify-content: flex-end;  line-height: 1; margin-top: 0.5em; padding: 0;}
+#pageContainer.campaign.apply .formArea .infoBox .caption.red{color: red;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox .caption > *:not(svg){ display: flex; flex-flow: row; align-items: center; padding: 0 0.25em;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox .caption a{text-decoration: none; color: inherit; outline: 0; margin: 0; width: fit-content;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook > div{flex-flow: row wrap; align-items: stretch;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox > div input, #pageContainer.campaign.apply .formArea .infoBox.useBook > div textarea{  width: 100%; background: #fff3; display: block; padding-left: 0.7em; text-align: start;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox button{font-size:0.85em; font-weight:700; background:var(--TxtColorFixed); border:1px solid var(--BgColorReversed); line-height:1; padding:0.6em 0.8em; margin-right: 0.5em; width: 8%; align-items: center;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeS  {border-color:seagreen; }
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeA{border-color:dodgerblue; }
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeB {border-color:darkorange; }
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeC {border-color:gray;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeS:hover, .gradeS:active{background-color: seagreen; color: white;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeS:focus{background-color: seagreen; color: white;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeA:hover, .gradeA:active{background-color: dodgerblue; color:white;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeA:focus{background-color: dodgerblue; color:white;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeB:hover, .gradeB:active{background-color:darkorange; color:white;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeB:focus{background-color:darkorange; color:white;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeC:hover, .gradeC:active {background-color:gray; color:white;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook .conditionBox .gradeC:focus{background-color:gray; color:white;}
+
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook div.location .zip{width: 100%; display: flex; flex-flow: row; align-items: stretch; justify-content: flex-start;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook > div.location .zip input{width: 200px; margin-right: 0.5em;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook > div.location .zip button{background: #ccc7; border: 1px solid var(--BorderColor); font-size: 0.875em; font-weight: 600;line-height: 1;display: flex; align-items: center; padding: 0 1em;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook > div.location > *:not(label){margin-bottom: 0.5em;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook > div.book .searchBundle{width: 80%; display: flex; flex-flow: row; align-items: stretch; justify-content: flex-start;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook > div.book .search div.likeInput{width: 400px;}
+#pageContainer.campaign.apply .applySection .formArea .infoBox.useBook > div.book .searchBundle button{background: #ccc7; border: 1px solid var(--BorderColor); font-size: 0.875em; font-weight: 600;line-height: 1; display: flex; align-items: center; padding: 0 1em; width: 20%; margin-left: 0.5em;}
+#pageContainer.campaign.apply .applySection .formArea .btnBox{width: 100%; display: flex; flex-flow: row wrap; align-items: center; justify-content: space-between;  padding: 1em 3em;}
+#pageContainer.campaign.apply .applySection .formArea .btnBox button{width: calc(50% - 0.5em); background: #aaa5; border: 1px solid var(--BorderColor); font-weight: 600;letter-spacing: 1em; line-height: 1; padding: 1em;}
+#pageContainer.campaign.apply .applySection .formArea .btnBox button.submit{background: var(--BgColorReversed); color: var(--TxtColorReversed); font-weight: 700;}
+/* #pageContainer.campaign.apply -- END --- */
+
+/*#pageContainer.campaign aceept --START --- */
+#pageContainer.campaign .modalArea{width:100vw; height:100vh; background:var(--ModalBgColor); backdrop-filter:blur(10px); position:fixed; top:0; left:0; z-index:999;}
+#pageContainer.campaign .modalArea > *:not(.bgClickClose){width: 100%; max-width: 940px; background: var(--BgColor); position: absolute; left: 50%;transform: translateX(-50%);  z-index: 3;}
+#pageContainer.campaign .modalArea .campaignModal{height: calc(100vh - 220px); top: 50px;  overflow-Y: auto;}
+#pageContainer.campaign .modalArea .campaignModal .acceptList{height: calc(100vh - 220px); top: 50px; overflow-Y: auto;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox{width: 100%; display: flex; flex-flow: column wrap;  transition: 0.5s all ease; padding: 0 3em; margin-top: 1em;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox .backBtn{margin-bottom: 1em;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox .imgBox{display: flex; flex-direction: row; flex-wrap: nowrap;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox .imgBox label{display: flex; align-items: center; justify-content: center; width: 90%; padding-right: 1em;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox .imgBox img{width: 30%; margin-right: 1.5em;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox table tr,td{text-align: center;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox table thead{margin-bottom: 1em;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox table td:nth-child(1), td:nth-child(2){width: 3%;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox table td:nth-child(4), td:nth-child(5){width: 10%;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox table input, label{margin-right: 0.5em;}
+#pageContainer.campaign .modalArea .campaignModal .resultBox table tbody td:last-child button{margin-left: 1em; border: 1px solid var(--BorderColor); width: 100%; padding: 0.16em 1em;}
+
+/*#pageContainer.order --START --- */
+#pageContainer.order #pageVisual{max-width: 100%;  background: var(--BgColor);color: var(--TxtColor); display: flex; flex-flow: column wrap; justify-content: center; padding: 2em 10em; height: auto}
+#pageContainer.order #pageVisual section{max-width: 100%; padding: 2em;display: flex; justify-content: center;}
+#pageContainer.order section table{margin-bottom: 2em;}
+#pageContainer.order section table caption{font-size: 2em; margin-bottom: 1em;}
+#pageContainer.order section td{border: 1px solid var(--GuideColor); padding-left: 0.5em; height: auto; text-align: center;}
+#pageContainer.order section thead > tr{font-weight: 700;}
+#pageContainer.order section td:first-child{width: 30%;}
+#pageContainer.order section td:nth-child(n+2):nth-child(-n+3){width: 20%;}
+#pageContainer.order section td:nth-child(n+4):nth-child(-n+5){width: 15%;}
+#pageContainer.order section .orderContent{width: 90%; display: flex; flex-direction: column; justify-content: center}
+#pageContainer.order section img{width: 70%;padding-top: 0.5em;    height: 50vh;}
+#pageContainer.order section .buyinfoArea{display: flex; flex-direction: row; flex-wrap: nowrap;justify-content: space-between;align-items: center; padding: 0 8em;}
+#pageContainer.order section .buyinfoArea .infoBox{border-right: 1px solid var(--BorderColor); width: 50%;}
+#pageContainer.order section .buyinfoArea .infotitle{font-size: 1.2em; font-weight: 700; margin-bottom: 0.5em;}
+#pageContainer.order section .buyinfoArea .name, .call, .payment, .email{margin-bottom: 1em;}
+#pageContainer.order section .buyinfoArea .name>div, .call>div, .payment>div, .email>div{padding-left: 0.5em;}
+#pageContainer.order section .buyinfoArea .location{display: flex; flex-direction: column; width: 50%; margin-left: 1em;}
+#pageContainer.order section .buyinfoArea .location .zip{display: flex; flex-direction: row; margin-bottom: 0.5em; align-items: center;}
+#pageContainer.order section .buyinfoArea input:not(.zip input){margin-bottom: 0.5em; width: 90%;}
+#pageContainer.order section .buyinfoArea input::placeholder{padding-left: 0.5em; color: var(--TxtColor);}
+#pageContainer.order section .buyinfoArea .zip button{border: 1px solid var(--BorderColor); margin-left: 1em; padding: 0.5em}
+#pageContainer.order section .buyinfoArea .location .caption{margin-left: 7.5em; margin-top: 0.5em;}
+#pageContainer.order section .buybtnBox{padding: 0.5em; border: 1px solid var(--BorderColor); background-color: var(--BgColorReversed); color: var(--TxtColorReversed); text-align: center; width: 60%; margin: 2em auto;}
+#pageContainer.order section .buybtnBox button{text-align: center; width: 100%;}
+
+/*#pageContainer.order --END --- */
